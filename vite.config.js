@@ -10,6 +10,12 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+   // 打包配置
+  build: {
+    outDir: 'docs', // 输出目录改为 docs
+    emptyOutDir: true, // 打包前清空目录
+    assetsDir: 'assets' // 静态资源目录（默认即可）
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
