@@ -7,6 +7,11 @@ const router = createRouter({
             path: '/home',
             component: () => import('@/components/HelloWorld.vue'),
             children: []
+        },
+        {
+            path: '/detail',
+            component: () => import('@/components/TheWelcome.vue'),
+            children: []
         }
     ]
 })
